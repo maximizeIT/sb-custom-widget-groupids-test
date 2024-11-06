@@ -36,7 +36,7 @@ export const GroupidsTest = ({ widgetApi }: GroupidsTestProps): ReactElement => 
       user ? (
         <div>
           <p style={{ marginBottom: 10 }}>All user attributes:</p>
-          <ul>
+          <ul style={{ listStyle: "disc", marginLeft: 20, lineHeight: 1.25 }}>
             {Object.entries(user).map(([key, value]) => (
               <li key={key}>{`${key}: ${value}`}</li>
             ))}

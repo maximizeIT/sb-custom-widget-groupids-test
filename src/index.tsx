@@ -24,6 +24,7 @@ import pkg from '../package.json'
  * Define which attributes are handled by the widget. This should be also reflected in configuration schema
  */
 const widgetAttributes: string[] = [
+  "message"
 ];
 
 /**

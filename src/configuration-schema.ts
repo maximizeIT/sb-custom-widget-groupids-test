@@ -18,7 +18,14 @@ import { JSONSchema7 } from "json-schema";
  * schema used for generation of the configuration dialog
  * see https://rjsf-team.github.io/react-jsonschema-form/docs/ for documentation
  */
-export const configurationSchema: JSONSchema7 = {};
+export const configurationSchema: JSONSchema7 = {
+  properties: {
+    message: {
+      type: "string",
+      title: "Message",
+    },
+  },
+};
 
 /**
  * schema to add more customization to the form's look and feel
